@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотная библиотека</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Нотная библиотека</h1>
+    </header>
+    <main>
+        </section>
+        <section id="files">
+            <h2>Файлы</h2>
+            <div id="file-container">
+                <!-- Место для отображения загруженных PDF-файлов -->
+            </div>
+            <input type="file" id="fileInput" style="display: none;">
+            <button id="upload-file-btn" onclick="uploadFile()">Загрузить файл</button>
+        </section>
+        <section id="folders">
+            <h2>Список папок</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>PDF файл</th>
+                <th>Примечания</th>
+            </tr>
+        </thead>
+        <tbody id="folders-list">
+            <!-- Список папок будет отображаться здесь -->
+        </tbody>
+    </table>
+    <a href="create.html">Создать</a>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>© 2024 Нотная библиотека. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Подключаем JavaScript-файл -->
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание папки</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <h1>Создание папки</h1>
+    <form id="create-folder-form" action="/api/create-folder" method="post" enctype="multipart/form-data">
+        <label for="folder-name">Название:</label>
+        <input type="text" id="folder-name" name="folderName">
+        <br>
+        <label for="pdf-file">PDF файл:</label>
+        <input type="file" id="pdf-file" name="pdfFile">
+        <br>
+        <label for="notes">Примечания:</label>
+        <textarea id="notes" name="notes"></textarea>
+        <br>
+        <!-- Используем кнопку типа submit -->
+        <button type="submit">Создать</button>
+    </form>
+    <script src="create.js"></script>
+</body>
+</html>
